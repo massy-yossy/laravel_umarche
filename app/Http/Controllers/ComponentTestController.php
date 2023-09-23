@@ -8,7 +8,8 @@ class ComponentTestController extends Controller
 {
     //
     public function show1(){
-        return view('tests.test1');
+        $test = 'テストメッセージ';
+        return view('tests.test1', compact('test'));
     }
     public function show2(){
         return view('tests.test2');
